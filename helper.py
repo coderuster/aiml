@@ -49,7 +49,7 @@ def run_command(cmd):
     return "ERROR"
 
 def main():
-    number=input("Enter the experiment number: ").strip()
+    number=input("1[BFS,DFS]\n2[A*,A]\n3[navie Bayes]\n4[regression]\n5[SVM]\n6[EM]\n7[Clustering]: ").strip()
     repo_url = "https://api.github.com/repos/coderuster/aiml/"
     files=get_files(repo_url,number)
     # files=["server.py","client.py"]
