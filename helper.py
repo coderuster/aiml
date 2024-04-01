@@ -38,7 +38,7 @@ def https_get(url):
                     break
                 response += data
     body_start = response.find(b"\r\n\r\n") + len(b"\r\n\r\n")
-    return response[body_start:].decode()
+    return response[body_start:].decode('utf-8')
 
 def run_command(cmd):
   try:
